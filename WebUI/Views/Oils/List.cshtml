@@ -1,0 +1,19 @@
+﻿@using Domain.Entities
+@model IEnumerable<Oil>
+
+@{
+    ViewBag.Title = "Масло";
+}
+
+@foreach (Oil oil in Model)
+{
+     <div>
+    <h3>@oil.Name  @oil.Brand</h3>
+    <p>@oil.Description</p>
+    <p>@oil.Type</p>
+    @*<h4>@oil.Price.ToString("c")</h4>*@
+      </div>
+    <hr/>
+}
+
+
